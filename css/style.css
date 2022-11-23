@@ -36,6 +36,8 @@ figure {
   background-color: #f5f4fa;
   align-items: center;
   justify-content: center;
+  transition: all 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-box:hover {
@@ -50,6 +52,8 @@ figure {
   width: 170px;
   border-radius: 4px;
   border: 1px solid #afb1b8;
+  transition: all 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-box:hover {
@@ -87,6 +91,8 @@ figure {
   align-items: center;
   border-radius: 50%;
   fill: #afb1b8;
+  transition: all 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .media-icon:hover {
@@ -104,6 +110,8 @@ figure {
   border-radius: 50%;
   fill: #ffffff;
   background-color: #ffffff1a;
+  transition: all 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-media-icon:hover {
@@ -149,6 +157,8 @@ figure {
   color: #757575;
   margin-left: 371px;
   margin-right: 50px;
+  transition: all 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mail-footer {
@@ -160,6 +170,8 @@ figure {
   display: flex;
   align-items: center;
   color: #757575;
+  transition: all 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .phone:hover svg {
@@ -221,6 +233,8 @@ figure {
   margin-right: 8px;
   display: inline-block;
   cursor: pointer;
+  transition: all 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-button:hover {
@@ -237,6 +251,8 @@ figure {
   cursor: pointer;
   font-family: Roboto;
   font-weight: 700;
+  transition: all 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .order:hover {
@@ -368,6 +384,7 @@ figure {
 }
 
 .destiny {
+  /* max-height: 294px; */
   display: flex;
   align-items: center;
   text-align: center;
@@ -383,6 +400,8 @@ h2 {
 
 a {
   text-decoration: none;
+  transition: all 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 a:focus {
   color: var(--secondary-color);
@@ -391,13 +410,21 @@ a:focus {
 a:hover {
   color: var(--secondary-color);
 }
+
+button {
+  transition: all 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 button:focus {
   color: #ffffff;
 }
+
 button:hover {
   color: #ffffff;
   background-color: #2196f3;
 }
+
 .paragraf {
   height: 75px;
   width: 270px;
@@ -563,6 +590,8 @@ figure {
   width: 370px;
   height: 404px;
   border: 1px solid #eeeeee;
+  transition: all 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .product-card:hover {
@@ -571,6 +600,8 @@ figure {
 
 .client {
   fill: #afb1b8;
+  transition: all 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client:hover {
@@ -593,5 +624,28 @@ figure {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-align: left;
+  color: #ffffff;
+}
+
+.thumb {
+  position: relative;
+  max-height: 294px;
+}
+
+.label {
+  position: absolute;
+  display: block;
+  width: 370px;
+  height: 70px;
+  background: #2f303acc;
+  bottom: 0;
+  margin: auto;
+  padding-top: 27px;
+
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
   color: #ffffff;
 }
