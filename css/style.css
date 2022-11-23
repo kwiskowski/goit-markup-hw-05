@@ -649,3 +649,17 @@ figure {
   letter-spacing: 0.03em;
   color: #ffffff;
 }
+
+.nav > ::after {
+  text-decoration: underline;
+  height: 4px;
+  width: 53px;
+  left: 453px;
+  top: 76px;
+  border-radius: 2px;
+  color: #2196f3;
+}
+
+.nav > a {
+  position: relative;
+}
