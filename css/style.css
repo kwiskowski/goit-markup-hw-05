@@ -153,10 +153,13 @@ figure {
 
 .mail {
   display: flex;
+  position: relative;
   align-items: center;
   color: #757575;
-  margin-left: 371px;
+  /* margin-left: 371px; */
   margin-right: 50px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   transition: all 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -168,8 +171,11 @@ figure {
 
 .phone {
   display: flex;
+  position: relative;
   align-items: center;
   color: #757575;
+  padding-top: 32px;
+  padding-bottom: 32px;
   transition: all 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -356,13 +362,14 @@ figure {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  margin: 0px;
+  margin-left: 345px;
   padding: 0px;
   text-align: end;
 }
 
 .contact-list-item {
   margin-left: 0px;
+  color: #757575;
 }
 
 .main-list {
@@ -377,6 +384,20 @@ figure {
 
 .main-list-item {
   margin-left: 46px;
+  color: var(--primary-color);
+}
+
+.main-list-item::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 53px;
+  border-radius: 2px;
+  position: absolute;
+  background-color: var(--secondary-color);
+  transition-property: coror, opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .paragraphs {
@@ -440,7 +461,7 @@ button:hover {
   margin-right: 30px;
 }
 .link {
-  color: var(--primary-color);
+  /* color: var(--primary-color); */
   font-family: Roboto;
   font-size: 14px;
   font-weight: 500;
@@ -662,4 +683,9 @@ figure {
 
 .nav > a {
   position: relative;
+}
+
+.contact-icon {
+  fill: #757575;
+  margin-right: 10px;
 }
