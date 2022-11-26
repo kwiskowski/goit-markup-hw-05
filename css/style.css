@@ -391,14 +391,14 @@ figure {
 }
 
 .main-list-item::after:hover {
-  content: "";
+  /* content: "";
   display: block;
   height: 4px;
   width: 53px;
   border-radius: 2px;
   left: 0;
   bottom: -32px;
-  position: absolute;
+  position: absolute; */
   opacity: 1;
   background-color: var(--secondary-color);
 }
@@ -414,7 +414,7 @@ figure {
   position: absolute;
   opacity: 0;
   background-color: var(--secondary-color);
-  transition-property: all;
+  transition-property: opacity;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
