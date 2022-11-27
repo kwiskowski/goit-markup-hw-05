@@ -627,15 +627,22 @@ figure {
 }
 
 .product-card {
+  position: relative;
   width: 370px;
   height: 404px;
   border: 1px solid #eeeeee;
   transition: all 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
 }
 
 .product-card:hover {
   box-shadow: 1px 4px 6px 0px #00000029;
+}
+
+.product-card:hover .overlay {
+  box-shadow: 1px 4px 6px 0px #00000029;
+  transform: translatex(0);
 }
 
 .client {
@@ -707,4 +714,15 @@ figure {
 .contact-icon {
   fill: #757575;
   margin-right: 10px;
+}
+
+.overlay {
+  position: absolute;
+  height: 294px;
+  width: 370px;
+  /* left: 215px;
+top: 262px; */
+  border-radius: 0px;
+  background-color: #2196f3e5;
+  opacity: 0.9;
 }
