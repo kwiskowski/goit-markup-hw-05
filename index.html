@@ -27,7 +27,9 @@
           <nav>
             <ul class="main-list">
               <li>
-                <a class="link main-list-item" href="index.html">Agencja</a>
+                <a class="link main-list-item first-page" href="index.html"
+                  >Agencja</a
+                >
               </li>
               <li>
                 <a class="link main-list-item" href="portfolio.html"
@@ -63,7 +65,9 @@
       <div class="box">
         <div class="slogan">
           <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-          <button class="order" type="button">Zamów usługe</button>
+          <button class="order modal-btn" type="button" data-modal-open>
+            Zamów usługe
+          </button>
         </div>
       </div>
       <section class="section">
@@ -521,6 +525,12 @@
         </ul>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>X</button>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
