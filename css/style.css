@@ -110,7 +110,7 @@ figure {
   border-radius: 50%;
   fill: #ffffff;
   background-color: #ffffff1a;
-  transition: fill 250ms;
+  transition: fill 250ms, background-color 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -309,7 +309,7 @@ figure {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  jusify-content: center;
+  justify-content: center;
   align-items: center;
   margin: 0px;
   padding: 0px;
